@@ -1,0 +1,10 @@
+export PATH=/spmfs/tools/Xilinx/Vivado/2024.1/bin:/spmfs/tools/Xilinx/Vitis/2024.1/bin:$PATH
+source /spmfs/tools/Xilinx/Vitis/2024.1/settings64.sh
+source /opt/xilinx/xrt/setup.sh 
+
+export TVM_HOME=<tvm home>
+export PYTHONPATH=$TVM_HOME/python:$TVM_HOME/vta/python:$PYTHONPATH
+export VTA_HW_PATH=$TVM_HOME/3rdparty/vta-hw
+export XCL_EMULATION_MODE=hw_emu
+export XRT_INI_PATH=<path for xrt.ini>
+export EMCONFIG_PATH=<emconfig path>
